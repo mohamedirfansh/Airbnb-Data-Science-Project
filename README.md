@@ -2,9 +2,11 @@
 
 ![Seattle](seattle.jpg)
 
-**What are the factors and features of a listing that make an Airbnb listing in Seattle more expensive?**  
+__Here is a quick summary of the project. The full project with all analysis and findings can be viewed [here](URL!).__
+---
+
+### What are the factors and features of a listing that make an Airbnb listing in Seattle more expensive?  
   
-__Here is a quick summary of the project. The full project with all analysis and findings can be viewed [here](URL!).
 That is the question this project aims to answer. We start of by collecting data of listings from [Kaggle](https://www.kaggle.com/airbnb/seattle). Then, we clean the data to a preferred format for data analysis. We then do Exploratory Analysis on the data by focusing on 3 sub-problems:
 
 1. What are the features/facilities/ammenities of a property that affect its price?
@@ -37,7 +39,7 @@ If you would like to download and run all the data analysis and prediction model
 
 ### Installing and running
 
-Install the required modules by running the following code in your terminal:
+Install the required modules by running the following in your terminal:
 
 ```
 pip install graphviz
@@ -51,7 +53,7 @@ pip install treeinterpreter
 Then clone this repo with
 ```git clone https://github.com/mohamedirfansh/Airbnb-Data-Science-Project.git```
 
-You can then open ```Exploratory Analysis Problem 1.ipynb```, ```Exploratory Analysis Problem 2.ipynb```, ```Exploratory Analysis Problem 3.ipynb``` and ```Machine Learning Models.ipynb``` with ***Jupyter Notebook**.
+You can then open ```Exploratory Analysis Problem 1.ipynb```, ```Exploratory Analysis Problem 2.ipynb```, ```Exploratory Analysis Problem 3.ipynb``` and ```Machine Learning Models.ipynb``` with **Jupyter Notebook**.
 
 ## Built with
 
