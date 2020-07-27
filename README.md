@@ -2,10 +2,10 @@
 
 ![Seattle](seattle.jpg)
 
-_Here is a quick overview of the project. The full project with all analysis and findings can be viewed [here](URL!)._
----
+*Here is a quick overview of the project. The full project with all analysis and findings can be viewed [here](URL!).*
+
 ## Overview
-#### What are the factors and features of a listing that make an Airbnb listing in Seattle more expensive?  
+### What are the factors and features of a listing that make an Airbnb listing in Seattle more expensive?  
   
 That is the question this project aims to answer. We start of by collecting data of listings from [Kaggle](https://www.kaggle.com/airbnb/seattle). Then, we clean the data to a preferred format for data analysis. We then do Exploratory Analysis on the data by focusing on 3 sub-problems:
 
@@ -41,7 +41,7 @@ If you would like to download and run all the data analysis and prediction model
 
 Install the required packages by running the following in your terminal:
 
-```bash
+```
 pip install graphviz
 pip install langdetect
 pip install wordcloud
@@ -51,7 +51,7 @@ pip install treeinterpreter
 ```
 
 Then clone this repo with
-```bash
+```
 git clone https://github.com/mohamedirfansh/Airbnb-Data-Science-Project.git
 ```
 
