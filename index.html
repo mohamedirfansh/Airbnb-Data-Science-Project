@@ -6,15 +6,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/jquery.scrollgress.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.slidertron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
+		
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -58,6 +50,7 @@
 							</ul>
 						</li>
 						<li><a href="#three">Tech Stack</a></li>
+						<li><a href="https://github.com/mohamedirfansh/Airbnb-Data-Science-Project">View on GitHub</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -103,7 +96,7 @@
 						<ul>
 							<li>Convert price of listings from strings to floats and also remove the '$' sign.</li>
 							<li>Change NaN values to the integer 0.</li>
-							<li>Removing unwanted columns from the dataset such as "listing_url", "scrape_id" etc.</li>
+							<li>Removing unwanted columns from the dataset such as <code>listing_url</code>, <code>scrape_id</code> etc.</li>
 							<li>Cleaning the textual data into a form that would be suitable for Python's NLTK.</li>
 							<li>Encoding the categorical variables so that it can be fit into the regression models later.</li>
 							<li>Separating the data into predictor and response variables.</li>
@@ -132,12 +125,12 @@
 						<h3>Analyzing the prices for the different room and property types.</h3>
 						<img src="images/roomprice.jpg" alt="" />
 						<p>From the above heatmap, with lighter colour representing lower price and darker representing higher price, we can see that shared rooms have the lighest colour hence cheapest. Private rooms have a slightly darker colour so they are in the middle, and entire houses are the darkest thus the most expensive. It is also important to note that the highest number of listings which was house
-							 and apartments actually have very similar prices for each of the room_type category. All of this tells us that the room_type and property_type both play a very important role in the final price of the listing.</p>
+							 and apartments actually have very similar prices for each of the <code>room_type</code> category. All of this tells us that the <code>room_type</code> and <code>property_type</code> both play a very important role in the final price of the listing.</p>
 						<h3>Anaylzing the listings based on the number of bedrooms.</h3>
 						<img src="images/boxplot.jpg" alt="" />
 						<p>From the box plots above, it can be seen that listings have higher prices as the number of bedrooms increase.</p>
 						<h3>Analyzing if any particular ammenity results in higher prices.</h3>
-						<p><span class="image left"><img src="images/ammenity.jpg" alt="" /></span>The word cloud above was taken from the top 100 listings in terms of their price. We can see that the listings with the highest prices have ammenities such as 'Washer', Dryer', 'Heating', 'Wireless Internet', 'Smoke Detector', 'Free Parking', 'Kid Friendly'. 
+						<p><span class="image left"><img src="images/ammenity.jpg" alt="" /></span>The word cloud above was taken from the top 100 listings in terms of their price. We can see that the listings with the highest prices have ammenities such as <code>Washer</code>, <code>Dryer</code>, <code>Heating</code>, <code>Wireless Internet</code>, <code>Smoke Detector</code>, <code>Free Parking</code>, <code>Kid Friendly</code>. 
 							So, an aspiring Airbnb host should ensure that his property contains these ammenities so that he can charge a higher price. Similarly, if a traveller does not require any of these ammenities, he can opt for a listing without them to save cost. Ammenities and their influence into the price will be further explored in depth in the machine learning section of the project.</p>
 						<p>‏‏‎ ‎‎‎</p><p id="prob2">‏‏‎ ‎‎‎</p>
 						<!-- Problem 2-->
@@ -147,7 +140,7 @@
 						<span clas="image left"><iframe src="map.html" width="620" height="620" seamless></iframe>
 						<p>The map above shows clusters of the different types of listings. Yellow cirles represents entire house/apartments, red circles represent private rooms and blue circles 
 							represent shared rooms. From the points on the map above, we can see that most of the yellow cirles are concentrated in central Seattle. That is, most of the listings 
-							that list the entire house/apartment are concentrated in central Seattle and in particular neighbourhoods like 'Broadway', 'Belltown', 'Fremont', 'Pikepine Market', 'Queen Anne'.
+							that list the entire house/apartment are concentrated in central Seattle and in particular neighbourhoods like <code>Broadway</code>, <code>Belltown</code>, <code>Fremont</code>, <code>Pikepine Market</code>, <code>Queen Anne</code>.
 							Additionally, we have already noted that the more expensive listings are those that list the entire property. You can drag around the map and zoom to observe the listings.</p>
 						<h3>Finding the number of listings for each neighbourhood and the median price</h3>
 						<div class="slider">
@@ -167,27 +160,27 @@
 							</div>
 							<span class="nav-next"></span>
 						</div> 
-						<p id="prob3">From the plots above, we can see that most of the listings appear in 'Broadway', 'Belltown', 'Fremont', 'East/North/West Queen Anne' etc. This gives us a good insight into the potential 
+						<p id="prob3">From the plots above, we can see that most of the listings appear in <code>Broadway</code>, <code>Belltown</code>, <code>Fremont</code>, <code>East/North/West Queen Anne</code> etc. This gives us a good insight into the potential 
 							neighbourhoods where there are higher number of listings which we can tap into. By analyzing the number of listings and prices for each neighborhood, we can get a clearer understanding 
 							of which neighbourhoods have a lot of expensive listings. Looking at the analysis done so far, we can see that certain neighbourhoods are indeed more 'expensive' than others. 
 							However, some of those neighbourhoods do not have as many listings as other expensive neighbourhoods. Since our problem was to identify factors that make a listing more expensive, we can infer that 
 							these neighbourhoods tend to have more expensive listings. However, a more thorough inference would be to identify neighbourhoods that have both a higher number of listings and higher price as lower 
 							number of listings would mean fewer available listing for a customer to choose. 
-							As such, neighbourhoods such as 'Belltown', 'West Queen Anne' are neighbourhoods that have a lot of expensive listings. (I'm sorry if the images are blurry, you can see the actual plots in the jupyter notebook.)
+							As such, neighbourhoods such as <code>Belltown</code>, <code>West Queen Anne</code> are neighbourhoods that have a lot of expensive listings. (I'm sorry if the images are blurry, you can see the actual plots in the jupyter notebook.)
 						</p>
 						<!-- Problem 3 -->
 						<h3>Sub-Problem 3: Does textual data in the summary and sentiments of reviews affect price?</h3>
 						<p>Here we wanted to see if there are any relation between sentiment of reviews and the summary of the listing against the price.</p>
 						<h3>Common words in the summary of expensive listings</h3>
 						<p><span class="image left"><img src="images/summaryEx.jpg" alt="" /></span>
-							 This word cloud shows shows the most frequently used words in the summaries of the top 100 most expensive listings. We can see that they all have particularly 3 words in common: 'seattle',
-							 'home' & 'view'. Other words like: 'kitchen', 'bedroom', 'walk', 'modern' also commonly appear in those listings. But could it just be that all listings have these words in their summaries?
+							 This word cloud shows shows the most frequently used words in the summaries of the top 100 most expensive listings. We can see that they all have particularly 3 words in common: <code>seattle</code>,
+							 <code>home</code> & <code>view</code>. Other words like: <code>kitchen</code>, <code>bedroom</code>, <code>walk</code>, <code>modern</code> also commonly appear in those listings. But could it just be that all listings have these words in their summaries?
 							  To find out, lets also analyze the summaries of the cheapest listings and see if we can infer anything from that. 
 						</p><p>‏‏‎ ‎‎‎</p><p>‏‏‎ ‎‎‎</p>
 						<h3>Common words in the summary of the cheapest listings</h3>
 						<p><span class="image right"><img src="images/summaryCh.jpg" alt="" /></span>
 							Here we have seen the most common words in the summary of the cheapest listings. As it can be seen from the wordcloud, indeed there are overlapping words with the most expensive listings. 
-							Words like: 'seattle', 'bedroom', 'home' appear frequently in both. So they do not tell us anything special. However, words like: 'view', 'modern' & 'walk' appear more frequently in expensive 
+							Words like: <code>seattle</code>, <code>bedroom</code>, <code>home</code> appear frequently in both. So they do not tell us anything special. However, words like: <code>view</code>, <code>modern</code> & <code>walk</code> appear more frequently in expensive 
 							listings as opposed to cheaper listings. So it turns out that indeed there are certain words which appear more frequently among expensive listings.
 					   </p><p>‏‏‎ ‎‎‎</p>
 					   <h3>Analyzing if review sentiment has any relation with price</h3>
@@ -344,9 +337,9 @@
 						the heading of the different models), the above conclusion can be said as true as the scatter plot of Random Forrest Regression shows that many of the points are situated near the diagonal line thus being the most accurate.
 						It is also interesting to note that the MSE and R^2 values of the Linear Regression, Ridge Regression and Lasso Regression are very close to each other, this is most probably due to the similarities in the 3 models, as the Ridge and Lasso Regression model are supposed to be 
 						an upgraded version of Linear Regression.</p>
-					<h3>K-fold Cross Validation</h3>
+					<h3>K-Fold Cross Validation</h3>
 					<p>However, Random Train/Test Set Splits may not always be enough as it can be subjected to selection biased during the split process (even if its randomly split). This is especially so if the dataset is small. Train/Test Set Splits can also cause over-fitted predicted models 
-						that can also affect its performance metrics. As such, to overcome the pitfalls in Train/Test set split evaluation, k-fold Cross Validation is also performed. Here, the whole dataset is used to calcualte the performance of the regression models. This validation method is 
+						that can also affect its performance metrics. As such, to overcome the pitfalls in Train/Test set split evaluation, K-Fold Cross Validation is also performed. Here, the whole dataset is used to calcualte the performance of the regression models. This validation method is 
 						more popular simply because it generally results in a less biased or less optimistic estimate of the model.
 					</p>
 					<p>K-Fold Cross Validation is where the dataset will be split into k number of folds in which each fold is used as a testing point. Here, k=10 was used as it was a value that has been found to generally result in a model skill estimate with low bias and a modest variance.
@@ -359,7 +352,7 @@
 						This will show us how each individual feature contributed in its prediction based on individual results. A positive result would mean that the feature has a positive impact on the prediction while a negative result shows a negative impact. 
 						If the prediction of price is fairly accurate (comparing to its true value), then its contributions of individual features would also be deemed fairly reliable.
 					</p>
-					<p>When the TreeInterpreter library was run, we found that ammenities such as amenities such as a hot tub/sauna/pool, gym, elevator and the number of bedrooms were the most important in influencing the price of a listing. The code for this analysis as well as the entire project can be found in the jupyter notebook.</p>
+					<p>When the TreeInterpreter library was run, we found that ammenities such as amenities such as a hot <code>tub/sauna/pool</code>, <code>gym</code>, <code>elevator</code> and the <code>number of bedrooms</code> were the most important in influencing the price of a listing. The code for this analysis as well as the entire project can be found in the jupyter notebook.</p>
 					<h3>Conclusion</h3>
 					<p>From all the analysis done above, we can confidently answer our initial question of the factors that make a listing more expensive. An aspiring Airbnb host, if investing on a new property in Seattle, should focus on the following factors to maximize the price of his listing. Additionally a traveller
 						who wants to pay the lowest possible price for a listing might want to avoid having these features in his prospective housing :</p>
@@ -367,9 +360,9 @@
 						<li>Entire properties listed instead of just a single room fetch the highest prices.</li>
 						<li>Apartment and landed house tend to be the most expensive and the most abundant properties in Airbnb.</li>
 						<li>The more bedrooms a property has, the higher its price. The highest prices are fetched by 6 room properties.</li>
-						<li>There are plenty of listings in 'Belltown' or 'West Queen Anne' and they tend to be expensive.</li>
-						<li>Words like: 'view', 'modern' & 'walk' all frequently appear in the summary of the more expensive listing.</li>
-						<li>Ammenities such as: 'Washer', Dryer', 'Heating', 'Wireless Internet', 'Smoke Detector', 'Free Parking', 'Kid Friendly', 'TV', 'HotTub/Sauna/Pool', 'Gyms' and 'Elevators' are all common among the more expensive listings.</li>
+						<li>There are plenty of listings in <code>Belltown</code> or <code>West Queen Anne</code> and they tend to be expensive.</li>
+						<li>Words like: <code>view</code>, <code>modern</code> & <code>walk</code> all frequently appear in the summary of the more expensive listing.</li>
+						<li>Ammenities such as: <code>Washer</code>, <code>Dryer</code>, <code>Heating</code>, <code>Wireless Internet</code>, <code>Smoke Detector</code>, <code>Free Parking</code>, <code>Kid Friendly</code>, <code>TV</code>, <code>HotTub/Sauna/Pool</code>, <code>Gyms</code> and <code>Elevators</code> are all common among the more expensive listings.</li>
 						<li>The reviews a listing gets (quality or quantity) does not have much of an impact in its price.</li>
 					</ul>
 				</section>
@@ -479,6 +472,14 @@
 					</div>
 				</div>
 			</section>
+
+		<!-- CTA -->
+			<section id="cta" class="wrapper style3">
+				<h2>View the project on GitHub</h2>
+				<ul class="actions">
+					<li><a href="https://github.com/mohamedirfansh/Airbnb-Data-Science-Project" class="button big">Here</a></li>
+				</ul>
+			</section>
 			
 		<!-- Footer -->
 			<footer id="footer">
@@ -487,5 +488,14 @@
 				</span>
 			</footer>
 
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
 	</body>
 </html>
