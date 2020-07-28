@@ -1,8 +1,8 @@
 # Airbnb Data Science Project
 
-![Seattle](seattle.jpg)
+[![Seattle](seattle.jpg)](https://mohamedirfansh.github.io/Airbnb-Data-Science-Project/)
 
-*Here is a quick overview of the project. The full analysis and findings can be viewed [here](URL!).*
+*Here is a quick overview of the project. The full analysis and findings can be viewed [here](https://mohamedirfansh.github.io/Airbnb-Data-Science-Project/).*
 
 ## Overview
 ### What are the factors and features of a listing that make an Airbnb listing in Seattle more expensive?  
@@ -87,4 +87,3 @@ Machine Learning Models.ipynb
 This project is licensed under the **[MIT License](http://opensource.org/licenses/mit-license.php)** - see the [LICENSE](https://github.com/mohamedirfansh/Airbnb-Data-Science-Project/blob/master/LICENSE) file for more details.  
 Copyright © 2020 Mohamed Irfan.
 
----
