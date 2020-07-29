@@ -39,7 +39,7 @@ If you would like to download and run all the data analysis and prediction model
 
 ### Installing and running
 
-Install the required packages by running the following in your terminal:
+Install the required packages by running the following commands in your terminal:
 
 ```
 pip install graphviz
