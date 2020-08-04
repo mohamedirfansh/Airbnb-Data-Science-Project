@@ -4,7 +4,7 @@
 
 *Here is a quick overview of the project. The full analysis and findings can be viewed [here](https://mohamedirfansh.github.io/Airbnb-Data-Science-Project/).*
 
-## Overview
+## 📖 Overview
 ### What are the factors and features of a listing that make an Airbnb listing in Seattle more expensive?  
   
 That is the question this project aims to answer. We started of by collecting data of listings in Seattle from [Kaggle](https://www.kaggle.com/airbnb/seattle). Then, we cleaned the data to a useful format for data analysis. We then did Exploratory Analysis on the data by focusing on 3 sub-problems:
@@ -24,9 +24,9 @@ Afterwards, we did Machine Learning on the data by adpoting 6 different **Regres
 
 We partitioned the data into train and test sets and evaluated the models on their prediction accuracy. Once we found the most accurate prediction model, we used that model in a library called **TreeInterpreter** which decomposed the prediction into a sum of contributions from each feature: `Prediction = Bias + Feature1 x Contribution1 + … + FeatureN x ContributionN`. We used this to find the most important features that affected the price of a listing.
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
 If you would like to download and run all the data analysis and prediction models on your own machine, it is recommended to use to **Anaconda** and **Jupyter Notebook**. If you use **Anaconda** most of the packages used in this project are pre-installed except the following few:
 
@@ -37,7 +37,7 @@ If you would like to download and run all the data analysis and prediction model
 + CatBoost
 + TreeInterpreter
 
-### Installing and running
+### ⚡️ Installing and running
 
 Install the required packages by running the following commands in your terminal:
 
@@ -63,7 +63,7 @@ Exploratory Analysis Problem 3.ipynb
 Machine Learning Models.ipynb
 ``` 
 
-## Built with
+## 🛠️ Built with
 
 + [Python 3](http://www.python.org/) - Main programming language used, done in Jupyter Notebook
 + [Pandas](https://pandas.pydata.org/) - Main library used to manipulate the datasets
@@ -74,13 +74,13 @@ Machine Learning Models.ipynb
 + [CatBoost](https://catboost.ai/) - Used to implement gradient boost decision trees
 + [TreeInterpreter](https://pypi.org/project/treeinterpreter/) - Used to decompose predictions into a sum of contributions from each feature
 
-## Developers
+## 👨‍💻 Developers
 
 + [Mohamed Irfan](https://github.com/mohamedirfansh)
 + Dian Wei
 + Kristy
 
-## License
+## 📄 License
 
 [![GitHub](https://img.shields.io/github/license/mohamedirfansh/Airbnb-Data-Science-Project)](https://github.com/mohamedirfansh/Airbnb-Data-Science-Project/blob/master/LICENSE)
 
