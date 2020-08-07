@@ -13,10 +13,10 @@ That is the question this project aims to answer. We started of by collecting da
 2. Are there particular locations in Seattle where Airbnb listings fetch higher prices?
 3. Does textual data in the summary and sentiments of reviews affect price?
 
-Afterwards, we did Machine Learning on the data by adpoting 6 different **Regression** models for our regression problem. They were:
+Afterwards, we did Machine Learning on the data by adopting 6 different **Regression** models for our regression problem. They were:
 
 1. Linear Regression
-2. Random Forrest
+2. Random Forrest Regression
 3. XGBoost
 4. CatBoost
 5. Ridge Regression
@@ -65,14 +65,14 @@ Machine Learning Models.ipynb
 
 ## 🛠️ Built with
 
-+ [Python 3](http://www.python.org/) - Main programming language used, done in Jupyter Notebook
-+ [Pandas](https://pandas.pydata.org/) - Main library used to manipulate the datasets
-+ [Scikit-learn](https://scikit-learn.org/stable/) - Main library used for machine learning
-+ [Matplotlib](https://matplotlib.org/) - Used for graph plots and visualizations
-+ [Python NLTK](https://www.nltk.org/) - Used during exploratory analysis to get further insights into the textual data
-+ [XGBoost](https://xgboost.readthedocs.io/en/latest/) - Used to implement gradient boost decision trees
-+ [CatBoost](https://catboost.ai/) - Used to implement gradient boost decision trees
-+ [TreeInterpreter](https://pypi.org/project/treeinterpreter/) - Used to decompose predictions into a sum of contributions from each feature
++ [Python 3](http://www.python.org/) - Main programming language used, done in Jupyter Notebook.
++ [Pandas](https://pandas.pydata.org/) - Main library used to manipulate the datasets.
++ [Scikit-learn](https://scikit-learn.org/stable/) - Main library used for machine learning.
++ [Matplotlib](https://matplotlib.org/) - Used for graph plots and visualizations.
++ [Python NLTK](https://www.nltk.org/) - Used during exploratory analysis to get further insights into the textual data.
++ [XGBoost](https://xgboost.readthedocs.io/en/latest/) - Used to implement gradient boost decision trees.
++ [CatBoost](https://catboost.ai/) - Used to implement gradient boost decision trees.
++ [TreeInterpreter](https://pypi.org/project/treeinterpreter/) - Used to decompose predictions into a sum of contributions from each feature.
 
 ## 👨‍💻 Developers
 
