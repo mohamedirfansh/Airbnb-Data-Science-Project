@@ -1,9 +1,5 @@
 # Airbnb Data Science Project
 
-[![Seattle](seattle.jpg)](https://mohamedirfansh.github.io/Airbnb-Data-Science-Project/)
-
-*Here is a quick overview of the project. The full analysis and findings can be viewed [here](https://mohamedirfansh.github.io/Airbnb-Data-Science-Project/).*
-
 ## 📖 Overview
 ### What are the factors and features of a listing that make an Airbnb listing in Seattle more expensive?  
   
@@ -74,11 +70,7 @@ Machine Learning Models.ipynb
 + [CatBoost](https://catboost.ai/) - Used to implement gradient boost decision trees.
 + [TreeInterpreter](https://pypi.org/project/treeinterpreter/) - Used to decompose predictions into a sum of contributions from each feature.
 
-## 👨‍💻 Developers
 
-+ [Mohamed Irfan](https://github.com/mohamedirfansh)
-+ Dian Wei
-+ Kristy
 
 ## 📄 License
 
